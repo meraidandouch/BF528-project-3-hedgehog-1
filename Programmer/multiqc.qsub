@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#$ -P bf528
+#$ -cwd
+
+source /etc/bashrc
+
+module load python3/3.7.9
+module load multiqc/1.10.1
+
+multiqc /projectnb/bf528/users/hedgehog_2022/project3/Programmer/project-3-hedgehog-1/feature_counts/count_files
